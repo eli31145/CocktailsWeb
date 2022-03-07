@@ -1,0 +1,12 @@
+Project\CocktailWeb\controllers\CocktailRestController.class
+Project\CocktailWeb\models\Cocktail.class
+Project\CocktailWeb\controllers\UserRestController.class
+Project\CocktailWeb\models\CocktailSummary.class
+Project\CocktailWeb\services\CocktailService.class
+Project\CocktailWeb\repositories\SQL.class
+Project\CocktailWeb\services\EmailSenderService.class
+Project\CocktailWeb\repositories\UserRepository.class
+Project\CocktailWeb\models\User.class
+Project\CocktailWeb\models\Favourites.class
+Project\CocktailWeb\CocktailWebApplication.class
+Project\CocktailWeb\Constants.class
