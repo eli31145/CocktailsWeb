@@ -1,0 +1,38 @@
+.container {
+  margin-top: 30px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-left;
+  text-align: left;
+  width: 50px;
+}
+
+.google-login-btn {
+  background-image: url('src/assets/google-logo.png');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 10%;
+  padding-left: 10%;
+  margin-bottom:1.5em;
+}
+
+.mat-flat-button {
+  border:0.1em solid lightgray;
+}
+
+.mat-flat-button:hover {
+  background: #e7e7e7;
+}
+
+.bg {
+  /* Full height */
+ height: 100%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}

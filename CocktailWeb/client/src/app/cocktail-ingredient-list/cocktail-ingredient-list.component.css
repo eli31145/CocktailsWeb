@@ -1,0 +1,57 @@
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.contents {
+  text-align: center;
+}
+
+.border {
+  border: lightgrey solid 1px;
+  padding: 1em;
+}
+
+.mat-flat-button {
+  border:0.1em solid lightgray;
+}
+
+.mat-flat-button:hover {
+  background: #e7e7e7;
+}
+
+.a{
+  /* display: block; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title_center {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+

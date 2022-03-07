@@ -1,0 +1,27 @@
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title-name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.mat-flat-button {
+  border:0.1em solid lightgray;
+}
+
+.mat-flat-button:hover {
+  background: #e7e7e7;
+}
+
+.left {
+  margin-left: 10px;
+}

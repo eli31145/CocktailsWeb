@@ -1,0 +1,88 @@
+<div style="background-image:url('assets/c3_1280.jpg');" class="bg">
+  <span *ngIf="this.loggedIn == true">
+    <button mat-flat-button color="stroked" type="button" [routerLink]="['/user']">User Profile</button>
+  </span>
+
+  <span class="title_center"><h1>Welcome to CocktailWeb</h1></span>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <div class="container">
+
+    <form [formGroup]="searchForm">
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+              <div class="card card-sm">
+                  <div class="card-body row no-gutters align-items-center">
+                      <!-- this is the question mark pic -->
+                      <div class="col-auto">
+                          <i class="fas fa-search h4 text-body"></i>
+                      </div>
+
+                      <!--end of col-->
+                      <div class="col">
+                          <div class="formGroup">
+                            <input class="form-control form-control-lg form-control-borderless" type="text"
+                            id="cocktailName"
+                              formControlName="cocktailName"
+                              placeholder="Search Cocktail Name">
+                            </div>
+                      </div>
+                      <!--end of col-->
+                      <div class="col-auto">
+                          <button mat-flat-button color="primary" type="button" (click)="searchName()">Go</button>
+                          <button mat-flat-button color="primary" type="button" (click)="searchRandom()">Surprise Me</button>
+                        </div>
+                        <!--end of col-->
+                      </div>
+                    </div>
+                    <div class="card card-sm">
+                      <div class="card-body row no-gutters align-items-center">
+                        <!-- this is the question mark pic -->
+                        <div class="col-auto">
+                          <i class="fas fa-search h4 text-body"></i>
+                        </div>
+
+                        <!--end of col-->
+                        <div class="col">
+                          <div class="formGroup">
+                            <input class="form-control form-control-lg form-control-borderless" type="text"
+                            id="ingredient"
+                            formControlName="ingredient"
+                            placeholder="Search Ingredient">
+                          </div>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-auto">
+                          <button mat-flat-button color="primary" type="button" (click)="searchIngredient()">Go</button>
+                        </div>
+                        <!--end of col-->
+                      </div>
+                    </div>
+                  </div>
+                  <!--end of col-->
+                </div>
+
+              </form>
+            </div>
+</div>
+    <!-- Old form -->
+              <!-- <div class = "container">
+                <form [formGroup]="searchForm">
+                  <div class="formGroup">
+                    <input type="text"
+                      id="cocktailName"
+                      formControlName="cocktailName"
+                      placeholder="Search Cocktail Name">
+                      <button mat-flat-button color="primary" type="button" (click)="searchName()">Go</button>
+                      <button mat-flat-button color="primary" type="button" (click)="searchRandom()">Surprise Me</button>
+                  </div>
+
+                  <div class="formGroup">
+                    <input type="text"
+                      id="ingredient"
+                      formControlName="ingredient"
+                      placeholder="Search Ingredient">
+                      <button mat-flat-button color="primary" type="button" (click)="searchIngredient()">Go</button>
+                  </div>
+                </form>
+              </div> -->

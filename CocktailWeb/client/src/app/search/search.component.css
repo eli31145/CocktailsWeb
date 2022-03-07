@@ -1,0 +1,39 @@
+.mat-flat-button {
+border:0.1em solid lightgray;
+float: none;
+display:inline-block;
+}
+
+.mat-flat-button:hover {
+  background: #e7e7e7;
+}
+
+body{
+background:#ddd;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.title_center {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.bg {
+   /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

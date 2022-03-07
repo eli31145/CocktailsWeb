@@ -1,0 +1,65 @@
+<!-- edit the button accoding to chuck suggestion, go back to previous search page -->
+
+<span class="title_center"><h1>Cocktail Information:</h1></span>
+<hr>
+<span>
+  <!-- <button mat-flat-button color="stroked" type="button" [routerLink]="['/login']">Login</button> -->
+  <button mat-flat-button color="stroked" type="button" [disabled]="this.loggedIn === true" (click)="goToLogin()">Login</button>
+</span>
+<span *ngIf="this.loggedIn == true">
+  <button mat-flat-button color="stroked" type="button" [routerLink]="['/user']">User Profile</button>
+</span>
+<hr>
+
+  <table class="left">
+    <thead>
+      <tr>
+        <div class="title-name">Cocktail:</div> <span>{{cocktail?.strDrink}}</span>
+      </tr>
+      <tr>
+        <div class="title">Drink Id:</div> <span>{{cocktail?.idDrink}}</span>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <img src="{{cocktail?.strDrinkThumb}}" alt="cocktail image">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="title">Alcoholic/Non-Alcoholic:</div> <span>{{cocktail?.strAlcoholic}}</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="title">Type of Glass:</div> <span>{{cocktail?.strGlass}}</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="title"> Ingredients: </div>
+          <ol>
+            <li *ngFor="let i of cocktail?.ingredientAndMeasure">{{i}}</li>
+          </ol>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="title">Instructions:</div> <span>{{cocktail?.strInstructions}}</span>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+<hr>
+  <!-- <button mat-flat-button color="primary" type="button" [routerLink]="['/search']">Back to Search</button> -->
+  <button mat-flat-button color="primary" type="button" onclick="history.go(-1)">Back to Previous</button>
+  <button mat-flat-button color="stroked" type="button" [disabled]="this.loggedIn == false" (click)="addFavourites()">Add to Favourites</button>
+
